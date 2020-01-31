@@ -18,6 +18,7 @@ module.exports = {
     repoLabel: "Contribute!",
     // defaults to false, set to true to enable
     editLinks: true,
+    logo: "/frictionless-data-logo.svg",
     sidebar: "auto",
     nav: [
       { text: "Home", link: "/" },
