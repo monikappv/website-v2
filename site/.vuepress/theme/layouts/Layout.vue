@@ -29,7 +29,7 @@
       />
     </Sidebar>
 
-    <Home v-if="$page.frontmatter.layout === 'home'"/>
+    <Landing v-if="$page.frontmatter.layout === 'landing'"/>
     <Product v-else-if="$page.frontmatter.layout === 'product'"/>
     <Page
       v-else
@@ -52,11 +52,12 @@ import Home from '@theme/components/Home.vue'
 import Product from '../components/Product.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
+import Landing from '../components/Landing.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
 export default {
-  components: { Home, Product, Page, Sidebar, Navbar },
+  components: { Home, Product, Landing, Page, Sidebar, Navbar },
 
   data () {
     return {

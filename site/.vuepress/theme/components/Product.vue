@@ -8,7 +8,7 @@
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
       >
-
+      
       <p class="description">
         {{ data.tagline || $description || 'Welcome to your VuePress site' }}
       </p>
